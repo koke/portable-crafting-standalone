@@ -17,14 +17,14 @@ dependencyResolutionManagement {
 	versionCatalogs {
 		libs {
 			def mc_major = '1.19'
-			def mc = mc_major + '.2'
-			def mappings = 19
+			def mc = mc_major + '.4'
+			def mappings = 5
 
 			// // Base // //
 			version('minecraft', mc)
 			version('ql', "0.17.4")
-			version('qsl', "3.0.0-beta.18+${mc}")
-			version('qfapi', "4.0.0-beta.16+0.64.0-${mc}")
+			version('qsl', "5.0.0-beta.10+${mc}")
+			version('qfapi', "6.0.0-beta.9+0.83.0-${mc}")
 			version('quiltMappings', "${mc}+build.${mappings}")
 
 			library('minecraft', 'mojang', 'minecraft').versionRef('minecraft')
